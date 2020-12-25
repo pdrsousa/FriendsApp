@@ -1,5 +1,3 @@
-HEADER GOES HERE. This is a partial, it goes wherever we want on the app using the render function.
-This is a good way to separate code because we could simple copy the NavBar code to out application html.
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <%= link_to 'Friend App', root_path, class: "navbar-brand"%>
@@ -10,6 +8,12 @@ This is a good way to separate code because we could simple copy the NavBar code
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <%= link_to 'About us', home_about_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Friends', friends_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Add Friend', new_friend_path, class: "nav-link" %>
         </li>
       </ul>
       <form class="d-flex">
